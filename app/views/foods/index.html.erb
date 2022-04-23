@@ -1,0 +1,18 @@
+<h1>Today's Menu</h1>
+  <table>
+    <thead>
+      <tr>
+        <td><b>Name</b></td>
+        <td><b>Price</b></td>
+      </tr>
+    </thead>
+    <tbody>
+      <% @foods.each do |food| %>
+        <tr>
+          <td><%= food.name %></td>
+          <td><%= food.price %></td>
+        </tr>
+      <% end %>
+  </tbody>
+</table>
+
